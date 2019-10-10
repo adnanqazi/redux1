@@ -14,6 +14,7 @@ const AddTodo = ({ dispatch }) => {
             return
           }
           dispatch(addTodo(input.value))
+          console.log(`input value in AddTodo.js ${input.value}`)
           input.value = ''
         }}
       >
