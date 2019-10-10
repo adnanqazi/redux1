@@ -9,7 +9,8 @@ const mapStateToProps = (state, ownProps) => ({
 const mapDispatchToProps = (dispatch, ownProps) => ({
   onClick: () => dispatch(setVisibilityFilter(ownProps.filter))
 })
-
+/*note how children of FilterLink, from footer, are implicitly passed to Link as
+props.children*/
 export default connect(
   mapStateToProps,
   mapDispatchToProps
