@@ -4,7 +4,7 @@ export const addTodo = text => (
 {
   type: 'ADD_TODO',
   id: nextTodoId++,
-  text
+  text: text
 })
 
 //filter passed by footer.js is one among VisibilityFilters shown below
@@ -12,14 +12,14 @@ export const setVisibilityFilter = filter => (
 console.log(`action being created with setVisibilityFilter: ${filter}`) ||
   {
   type: 'SET_VISIBILITY_FILTER',
-  filter
+  filter: filter
 })
 
 export const toggleTodo = id => (
-console.log(`action being created with TOGGLE_TODO for id: ${id}`) ||
+console.log(`action being created with TOGGLE_TODO with id: ${id}`) ||
   {
   type: 'TOGGLE_TODO',
-  id
+  id: id
 })
 
 export const VisibilityFilters = {
